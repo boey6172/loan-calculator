@@ -19,18 +19,17 @@ const bull = (
 const card = (data) => (
   <React.Fragment>
     <CardContent>
-
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        Remaining Balance
-      </Typography>
-      <Typography variant="h5" component="div"> 
-      {data.remBalance}
-      </Typography>
       <Typography sx={{ fontSize: 14 }} color="text.primary" gutterBottom>
         Deductible Amount
       </Typography>
       <Typography variant="h5" component="div">
         {data.amount}
+      </Typography>
+      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        Remaining Balance
+      </Typography>
+      <Typography variant="h5" component="div"> 
+      {data.remBalance}
       </Typography>
     </CardContent>
   </React.Fragment>
