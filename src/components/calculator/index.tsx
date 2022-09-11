@@ -30,8 +30,8 @@ function App() {
   }
   
   const calculate = () =>{
-    let remBalance = Number((values.ttl_pay - values.debt * values.interest)/(1-values.interest))
-    let amount = Number(values.debt-remBalance)
+    let amount = Number((values.ttl_pay - values.debt * values.interest)/(1-values.interest))
+    let remBalance = Number(values.debt-amount)
     setData({
       remBalance:Number(remBalance.toFixed(2)),
       amount:Number(amount.toFixed(2))
