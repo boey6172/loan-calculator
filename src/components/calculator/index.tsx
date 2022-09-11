@@ -1,7 +1,6 @@
 import Inputs from '../input'
 import Button from '../button'
-import { styled } from '@mui/material/styles';
-import React,{useState} from 'react';
+import {useState} from 'react';
 import Holder from '../holder'
 
 function App() {
